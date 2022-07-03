@@ -1,0 +1,119 @@
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #8f54a0 #80ffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 1px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #80ffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+
+.slider-menu-container {
+    width: 100vw;
+    max-width: 85.375rem;
+    height: fit-content;
+
+    background: #F9F9F9;
+}
+
+.slider-menu-container > :nth-of-type(2) {
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.slider-menu-header {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 2.25em;
+    color: #0b5838;
+    margin-left: 6.125rem;
+}
+
+.page-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 27.5%);
+    grid-template-rows: min-content;
+    place-content: center;
+}
+
+.shrink {
+    transform: scale(0);
+    transition: transform 1s linear;
+}
+
+.enlarge {
+    transform: scale(1);
+    transition: transform 1s linear;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 3.625rem;
+}
+
+.category {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.85em;
+    color: #969393;
+    cursor: pointer;
+}
+
+.category-active {
+    color: #FF9800;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.product-title,
+.product-price {
+    max-width: 50%;
+    max-height: 2.25em;
+    font-family: var(--font-family);
+    font-size: 1.5em;
+    font-weight: 700;
+    overflow: hidden;
+    cursor: ns-resize;
+}
+
+.product-price {
+    font-weight: 900;
+}
+
+.product-description {
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: #969393;
+    
+    max-height: 2.25em;
+    overflow: hidden;
+    cursor: ns-resize;
+    margin-top: 1rem;
+}
+
+.product-title:hover,
+.product-description:hover {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

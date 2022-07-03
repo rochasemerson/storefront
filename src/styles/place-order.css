@@ -1,0 +1,57 @@
+.place-order-container {
+    display: flex;
+
+    background-color: #f9f9f9;
+    font-family: var(--font-family);
+    max-width: 85.375rem;
+    height: 40rem;
+    padding: 4.3rem 5.9rem;
+}
+
+.left-side-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right-side-container {
+    align-self: center;
+    justify-self: center;
+    padding: 4.3rem 5.9rem;
+}
+
+.left-side-container>h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+
+.left-side-container>p {
+    font-size: 1.125em;
+    font-weight: 400;
+    margin-top: 1rem;
+    max-inline-size: 75%;
+}
+
+.order-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15.8rem;
+    height: 3.25rem;
+    margin-top: 2.8rem;
+
+    background-color: #6b0909;
+    border-radius: 4px;
+    font-size: 1.125em;
+    color: #F9F9F9;
+}
+
+.order-btn:hover {
+    background-color: rgb(107, 9, 9, 0.75);
+}
+
+.order-btn > svg {
+    width: 1.25em;
+    height: 1.25em;
+    margin-right: 0.75rem;
+}

@@ -1,0 +1,86 @@
+.header {
+    background: #34e89e;
+    width: 100%;
+    max-width: 85.375rem;
+    height: 49rem;
+    overflow: hidden;
+}
+
+.main-title {
+    position: relative;
+    top: 5%;
+    left: 5%;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 2;
+}
+
+.main-title > h5 {
+    position: relative;
+    font-family: var(--font-family);
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0;
+}
+
+.main-title > h1 {
+    position: relative;
+    font-size: 4.5rem;
+    color: #000;
+    margin: 0;
+}
+
+.main-title > button {
+    width: 12.75rem;
+    height: 3.125rem;
+    background-color: #0f6d46;
+    color: #f9f9f9;
+    font-family: var(--font-family);
+    font-size: 1.125em;
+    border: none;
+    border-radius: 0.25rem;
+    margin-top: 2.25rem;
+    cursor: pointer;
+}
+
+.main-title > button:hover {
+    background-color: #159962;
+}
+
+.burger-container {
+    position: relative;
+    width: 561px;
+    height: 456px;
+    bottom: 50%;
+    left: 40%;
+}
+
+.burger-img {
+    width: 750px;
+    height: 650px;
+}
+
+.social-media-icons {
+    position: relative;
+    top: -85%;
+    right: -92.5%;
+
+    font-size: 2.5em;
+    color: #000;
+
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 3rem;
+    z-index: 9;
+}
+
+.social-media-icons > svg {
+    cursor: pointer;
+}
+
+.social-media-icons > svg:hover {
+    transform: scale(125%)
+}

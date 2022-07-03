@@ -1,0 +1,48 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.header-title {
+    padding: 0 3rem;
+}
+
+.logo-img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.navigation-container {
+    display: flex;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    gap: 2.5rem;
+}
+
+.links-container > a {
+    text-decoration: none;
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    font-size: 1.25em;
+    color: #000;
+}
+
+.btn-container {
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    font-size: 1.75em;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn-container > svg:hover {
+    transform: scale(125%);
+}

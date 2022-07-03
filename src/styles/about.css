@@ -1,0 +1,23 @@
+.about-container {
+    background: #34e89e;
+    width: 100%;
+    max-width: 85.375rem;
+    height: 34rem;
+    color: #000;
+
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+
+.right-side-text {
+    max-width: 25%;
+    align-self: center;
+}
+
+.main-text {
+    font-size: 2em;
+    font-weight: 400;
+    font-style: italic;
+}

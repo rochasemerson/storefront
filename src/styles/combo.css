@@ -1,0 +1,18 @@
+.combo-container {
+    width: 100vw;
+    grid-column: 1 / span 4;
+    max-width: 66.7rem;
+    height: fit-content;
+    background: #f9f9f9;
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: min-content;
+    transition: all 1s linear;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
